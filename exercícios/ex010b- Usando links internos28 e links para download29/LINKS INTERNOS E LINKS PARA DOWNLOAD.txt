@@ -1,0 +1,154 @@
+LINKS INTERNOS E LINKS PARA DOWNLOAD
+Cap 10 - aula 02 - video 28/Cap 10 - aula 03 - video 29
+
+"Antes de criar um link interno a gente tem que ter outras páginas"
+Criar a página 1 com as seguintes configurações:
+   <title> LINKS EXTERNOS (MESMO QUE AULA ANTERIOR)
+  <h1>Usando links externos (MESMO QUE AULA ANTERIOR)
+  <h2>Usando links internos
+1 -  Criar um novo link "pag002.html" ,essa é a página 2
+2 - Criar código base 
+3 - Title "Página02"
+4 - tag <h1> Esta é a minha segunda página
+5 - Tag <p> A segunda página está aqui
+6 - Volta pra página 1
+7 -  Criar tag <p> Esta é a primeira página do site. Se você quiser pode acessar também a minha <a href= "ctrl+space">Segunda página</a></p>
+obs : quando eu indico um link interno eu não preciso indicar a URL inteira ,contanto que a pasta esteja na mesma página do index.html.
+8 - Criar um link na página 02 que vai pra primeira página.
+9 - Na página 02 criar tag <p> Esta é a minha primeira página 
+10 - Na página 02 cria tag <p> <a href="ctrl+space"> Voltar para a primeira página
+11 - Acrescentar também rel="next"(na pag01) ou "prev"(na pag002) e assim sucessivamente
+obs : rel = next/prev ajuda nos mecanismos de busca. Aparentemente não acontece nada mas 
+existe uma semântica.
+12 - Inserir tag <p> abaixo da frase "A segunda página está aqui"
+13 - <p> Esta página é um oferecimento de Hostinet 
+14 - acrescentar target =blank  ref= nofollow
+obs : "nofollow" significa que você não dá o seu aval. Eu não quero que o mecanismo de 
+busca perpetue o meu essa busca.
+CRIANDO UMA TERCEIRA PÁGINA
+1 - Criar nova pasta dentro da pasta de arquivos com nome "noticias"
+2- No VSC clica na pag003 > new file > base code > title=Terceira página > h1 = Esta é a terceira página
+3 - na página index <p>Você também pode acessar nossa <a href="noticias/pag003.html" target="_blank" rel="next">página de notícias</a></p>
+4 - Na página index foi alteraro target= next para _self
+<p>Esta é a primeira página do site. Se você quiser , pode acessar também a minha <a href="pag002.html" referrerpolicy="next" target="_self">Segunda página</a></p>
+<p>Você também pode acessar nossa <a href="noticias/pag003.html" target="_blank" rel="next" target="_self">página de notícias</a></p>
+obs : recomenda-se abrir páginas do mesmo site na mesma aba.
+5 - Criar uma tag <p> na pag003
+<p><a href="../index.html">Voltar para a primeira página</a></p>
+obs :   ../  = duas pastas anteriores
+comentário : se precisar voltar 2,3,4 pastas em um link é só continuar usando a sequência de"../../../arquivo.html" para cada sequencia de ../ o código volta uma página.
+index.html
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no Github</a></p>
+    <p>Você também pode acessar o meu <a href="https:/youtube.com/cursoemvideo/" target="blank" rel="external">canal gratuito no youtube</a></p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser , pode acessar também a minha <a href="pag002.html" rel="next" target="_self">Segunda página</a></p>
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" target="_blank" rel="next" target="_self">página de notícias</a></p>
+</body>
+</html>
+pag002.html
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 02</title>
+</head>
+<body>
+    <h1>Esta é a segunda página do meu site</h1>
+    <p>A segunda página está aqui.</p>
+    <P>Esta página é um oferecimento de <a href="https://www.hostnet.com.br" target="_blank" rel="nofollow">Hostnet</a> </P>
+    <p><a href="index.html" rel="prev">Voltar para a primeira página</a></p>
+    
+</body>
+</html>
+
+pag003.html
+
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira página</title>
+</head>
+<body>
+    <h1>Terceira página</h1>
+    <p>Esta é a terceira página</p>
+    <p><a href="../index.html">Voltar para a primeira página</a> </p>
+</body>
+</html>
+
+EXERCÍCIO
+CRIAR UM LINK
+VAI PRA UMA PÁGINA DENTRO DO PROPRIO SITE
+VAI LÁ E VOLTA PRA PRIMEIRA PÁGINA
+DEPOIS CRIA UMA PASTA VAI COLOCAR UM ARQUIVO LÁ DENTRO
+NA PAGINA PRINCIPAL CRIAR UM LINK PRA ACESSAR ESSE ARQUIVO ,ESSA PÁGINA
+DENTRO DESSA PÁGINA VOLTAR PRA PRIMEIRA PÁGINA
+
+ LINKS PARA DOWNLOAD
+
+1 - Ir na pasta do exe10 e criar a pasta "livro"
+2 - Coloca um pdf dentro dessa pasta
+3-no VSC no arquivo index.html cria a tag h1 (ele apagou a que tinha e renomeou h1 tornando 3 tags h1)
+4-Cria uma lista desordenada e na primeira linha:
+ <li> <a>Baixar o livro em pdf
+obs : se a tag <a> estiver vazia na ref ,colocar #
+<li><a>Livro compactado em ZIP
+5- preenche a primeira linha com o pdf
+6-adicionar download="meulivro.df" type="application/pdf"
+site para midiatype de cada arquivo
+https://www.iana.org/assignments/media-types/media-types.xhtml
+<ul>
+        <li><a href="livro/Francisco-R$56.13.pdf" download="meulivro.df" type="application/pdf">Baixar o livro em pdf</a></li>
+        <li><a href="#"></a> Livro compactado em ZIP</li>
+    </ul>
+antes eu coloquei só a tag <a> e deu certo, foi pra página e permitiu o download
+acrescentando target=”_blank” abre nova aba
+
+li><a href="livro/Francisco-R$56.13.pdf" download="meulivro.df" type="application/pdf" target="_blank">Baixar o livro em pdf</a></li>
+        <li><a href="#"></a> Livro compactado em ZIP</li>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links Externos</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no Github</a></p>
+    <p>Você também pode acessar o meu <a href="https:/youtube.com/cursoemvideo/" target="blank" rel="external">canal gratuito no youtube</a></p>
+    <h1>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser , pode acessar também a minha <a href="pag002.html" referrerpolicy="next" target="_self">Segunda página</a></p>
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" target="_blank" rel="next" target="_self">página de notícias</a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/Francisco-R$56.13.pdf" download="meulivro.df" type="application/pdf" target="_blank">Baixar o livro em pdf</a></li>
+        <li><a href="#"></a> Livro compactado em ZIP</li>
+    </ul>
+</body>
+</html>

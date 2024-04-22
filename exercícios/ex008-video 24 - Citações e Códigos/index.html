@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código Fonte / Pré-fomatação</h2>
+    <p>O comando d<code>ocument.getElementById('teste')</code> é escrito em linguagem JavaScript.</document></p> <!--usando a tag code com envelopamento torna as palavras mono espaçadas-->
+    <pre>
+            <code> <!--abaixo é uma linguagem Python-->
+    num = int(input('Digite um número'))
+    if num % 2 = 0:
+        print(f' O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+            </code>
+</pre>
+<!--
+<p>Nota<sub>1</sub> Exemplo de linguagem Python acima</p>
+<p>Nota<sub>2</sub> Você pode mesclar a tag pre com a tag code</p>
+<p>Nota<sub>3</sub> Texto selecionado dentro da tag code + shift + tab = move o texto pra trás</p>
+<p>Nota<sub>4</sub> Texto selecionado dentro da tag code clica tab  move o texto pra frente</p>
+-->
+<h2>Citações simples</h2>
+<p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+<!--
+<p>nota : envelopando a frase com a tag q que significa quote (citação) ela coloca as aspas.</p>
+<p>nota : quando for uma citação colocar a tag q .</p>
+-->
+<h2>Citações completas</h2>
+<p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+<blockquote> cite=https://m.media-amazon.com/images/I/61pkDMExV9L._SY342_.jpg<!--aqui pode coloar o link de venda,o link da página do autor,o dono da frase aqui abaixo -->
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+</blockquote>
+<!--uma tag blockquote a frase vai aparecer deslocada pra frente e eu sei que é uma citação pra um determinado autor-->
+<!--dentro tag blockquote eu posso criar um parâmetro chamado cite,que significa sitando e colocar o endereço copiado na página do livro-->
+<!--quando clicar na frase(na página)não vai acontecer nada mas os mecanismos de busca vão saber que estou refenciando o livro que está no endereço que está aqui(mesmo que parcialmente) -->
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!--para abreviar usa tag abbr no envelopamento-->
+<h2>Texto invertido</h2>
+<p><bdo dir="rtl">estou aprendendo a criar coisas em HTML.</bdo></p> <!--usa-se a tag bdo para inverter o texto-->
+<p><q>Envelopando uma frase com a tag q que significa quotes, citação em português, ela se torna uma frase entre aspas.</q></p>
+<p>Envelopando uma frase com a tag q ,que significa quote(citação),ela se torna uma frase entre aspas.</p>
+<p>Envelopando uma frase com a tag q, que significa quote(citação), ela se torna uma frase entre aspas.</p>
+<p>Envelopando uma frase com a tag q, que significa quotes(citação), ela se torna uma frase entre aspas.</p>
+<p><bdo dir="rtl">Envelopando uma frase com a tag bdo e dir=rtl o texto invertido</bdo></p>
+<p><bdo dir="rtl">Envelopando a frase com a tag bdo e dir=rtl o texto fica invertido</bdo></p>
+</body>
+</html>

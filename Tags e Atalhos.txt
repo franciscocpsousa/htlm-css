@@ -1,0 +1,38 @@
+Tags e Atalhos
+
+
+Títulos <h1> 
+
+Subtítulos <h2>,...<h6>
+
+Parágrafos  <p>
+
+Negrito  <strong> texto </strong>
+
+Itálico <em> texto </em>
+
+Parágrafos  <p>
+
+Favicon <link.favicon.ico>  acima da tag <title>
+
+Envelopar ctrl+shift+p
+
+Âncora  <a> próxima página </a>
+
+Abreviações <abbr>
+
+Adicionar endereço dentro da tag ctrl+space
+
+Imagens  <img>
+
+Links internos   ../  atalho
+
+Centralizar o texto  style : text align : center
+
+Texto à direita  style : text align : right
+
+Texto excluído/riscado   <del>
+
+Texto inserido/sublindado   <ins>
+
+COMENTÁRIOS SHIFT + ALT + A

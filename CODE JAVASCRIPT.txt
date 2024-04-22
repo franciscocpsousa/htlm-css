@@ -1,0 +1,5 @@
+ /* PROMPT RECEBE VALORE  STRING */
+       //(number + number) para adição
+       //(string + string) para concatenação
+       //  SE QUISER CONVERTER STRING PARA NUMERO INTEIRO  >>  Number.parseInt(n)
+       //  SE QUISER CONVERTER STRING PARA NUMERO REAL  >>  Number.parseFloat(n)

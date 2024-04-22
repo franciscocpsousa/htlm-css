@@ -1,0 +1,13 @@
+@charset "UTF-8";
+h1{
+    color: red;
+    background-color: rgb(236, 236, 12);
+    text-align: center;
+}
+h2{
+    color: rgb(4, 4, 100);
+}
+mark{
+    background-color: rgb(26, 223, 26);
+    text-decoration: underline;
+}

@@ -1,0 +1,5 @@
+>>> Pessoal, um macete muito interessante  é  apertar "control+enter",fará vc ir para uma nova linha mesmo que o cursor esteja entre <tags>
+
+>>>>Aí pessoal outra dica q facilita no VSC por exemplo , ao invés de digitar OL depois 4 li's pode usar o comando "ol>li*numero" e depois tecla tab q ele já faz toda a estrutura com o número de li's dentro.
+
+>>>6:30 uma dica também é baixar a extensão "auto rename tAg". Com essa extensão, quando quiser alterar uma tag,é só alterar a abertura da tag que o fechamento também muda.
