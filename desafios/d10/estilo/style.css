@@ -25,7 +25,7 @@
 
 *{                  /* SELETOR COM * É UMA CONFIGURAÇÃO GLOBAL */
     margin: 0px;
-    padding-right: 0px;
+    padding: 0px;
 }
 
 body{
@@ -167,10 +167,14 @@ main > picture{
 
 div.img{
        text-align: center;
+       padding: 0px;
+       margin: 0px;
 }
 
 div.image{
     text-align: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 div.video {
