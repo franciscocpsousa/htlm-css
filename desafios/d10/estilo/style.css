@@ -23,11 +23,6 @@
     
 }
 
-*{                  /* SELETOR COM * É UMA CONFIGURAÇÃO GLOBAL */
-    margin: 0px;
-    padding: 0px;
-}
-
 body{
     background-color: rgba(60, 166, 141, 0.577);
     margin: opx;
