@@ -23,6 +23,11 @@
     
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: rgba(60, 166, 141, 0.577);
     margin: opx;
@@ -162,8 +167,6 @@ main > picture{
 
 div.img{
        text-align: center;
-       padding: 0px;
-       margin: 0px;
 }
 
 div.image{
