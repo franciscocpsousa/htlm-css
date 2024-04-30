@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;            
+        }
+
+        td{
+            border: 2px solid black;
+            padding: 8px;           
+        }
+        .numberT{
+            vertical-align: top;
+        }
+
+        .numberR{
+            text-align: right;
+        }
+        .numberL{
+            text-align: left;
+        }        
+        .numberB{
+            vertical-align: bottom;
+        }
+
+        .numberC{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhando Conteúdo em Tabelas</h1>
+    <!-- HIERARQUIA DE TABELAS(simples) -->
+         <!-- TABELA = Tabela
+            TABLE ROW = linha de Tabela
+            TABLE DATA = dados de tabela
+         -->
+    <div>
+        <table>
+            <tr>
+                <td class="numberC">A1</td>
+                <td class="numberT numberC">B1</td>
+                <td class="numberC">C1</td>
+            </tr>
+            <tr class="line">
+                <td>A2</td>
+                <td class="numberC">B2</td>
+                <td class="numberR">C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td class="numberC">B3</td>
+                <td class="numberR">C3</td>
+            </tr>
+            <tr>
+                <td class="numberC">A4</td>
+                <td class="numberC numberB">B4</td>
+                <td class="numberC">C4</td>
+            </tr>
+
+            
+    </div>
+    </table>
+    
+</body>
+</html>
