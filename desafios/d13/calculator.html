@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* table{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            width: 300px;
+            height: 400px;
+            background-color: rgb(8, 8, 8);
+            border-radius: 10px;
+        } */
+        /* thead{
+            border: 1px solid white;
+            width: 30px;
+            height: 40px;
+            background-color: rgb(255, 255, 255);
+            font-size: 30px;
+            padding: 300px;
+        } */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: skyblue;
+        }
+        table{
+            border: 1px solid black;
+            padding: 15px;
+            height: 270px;
+            border-radius: 10px;
+            background-color: black;
+            margin: auto;
+            margin-top: 40px;
+        }
+        td{
+            border: 1px solid rgb(0, 0, 0);
+            width: 40px;
+            height: 30px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border-radius: 3px;
+        }
+        td{
+            background-color: lightgray;
+        }
+        td:hover{
+            background-color: black;
+            color: white;
+        }
+        .value{
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+        .c{
+            background-color: red;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" class="value">Value</td>            
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>.</td>
+            <td>0</td>
+            <td>+</td>
+            <td class="c">c</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background-color: rgb(234, 62, 10); color: white">=</td>            
+        </tr>
+    </table>
+</body>
+</html>
