@@ -14,6 +14,11 @@
             border-collapse: collapse;
             width: 500px;
         }
+        caption{
+            background-color: lightgrey;
+            padding: 10px;
+            font: bold 25px Arial;
+        }
 
         th,td{ 
             border: 1px solid black;
@@ -22,6 +27,11 @@
         .num{
             text-align: right;
         }
+        thead, tfoot{
+            background-color: rgb(40, 39, 39);
+            color: white;
+        }
+
     </style>
     
 </head>
@@ -41,8 +51,8 @@
         <caption>População dos Estados</caption>
         <thead>
             <tr>
-                <t>Estado</th>
-                <t>População</th>
+                <th scope="col" >Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
